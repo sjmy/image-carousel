@@ -4,16 +4,35 @@
 
 .image-display {
   display: flex;
-  justify-self: center;
-  width: 50%;
+  justify-content: center;
+  margin: auto;
+  height: 50vh;
+  overflow: hidden;
 }
 
 .image-container {
   display: flex;
-  width: 100%;
+  position: relative;
 }
 
 img {
-  height: auto;
-  width: 100%;
+  display: none;
+  height: 50vh;
+  width: min-content;
+}
+
+.show {
+  display: inherit;
+}
+
+.prevButton,
+.nextButton {
+  opacity: 50%;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+}
+
+.nextButton {
+  right: 0;
 }
