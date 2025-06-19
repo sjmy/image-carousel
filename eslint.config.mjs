@@ -46,4 +46,5 @@ export default defineConfig([
     language: "css/css",
     extends: ["css/recommended"],
   },
+  { languageOptions: { sourceType: "module" } },
 ]);
